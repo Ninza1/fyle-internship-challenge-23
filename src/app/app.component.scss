@@ -1,0 +1,23 @@
+h1 {
+    font-size: 4rem;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/ohsXtgy8Hmi9PzDNpKhJ5N.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: normal;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.search-comp {
+    width: 100%;
+}
+
+// START MEDAI 
+@media(max-width: 575px) {
+    h1 {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+}

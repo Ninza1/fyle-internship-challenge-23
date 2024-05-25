@@ -1,5 +1,10 @@
-<div class="grid h-screen place-items-center">
+<!-- <div class="grid h-screen place-items-center"> -->
+<div class="">
+
   <div class="font-bold text-3xl">
-    Fyle Internship Challenge
+    <h1>Fyle Internship Challenge</h1>
   </div>
+    <app-search-bar class="search-comp" (search)="onSearch($event)"></app-search-bar>
+  
+  <app-repo-list *ngIf = "username" [username]="username"></app-repo-list>
 </div>

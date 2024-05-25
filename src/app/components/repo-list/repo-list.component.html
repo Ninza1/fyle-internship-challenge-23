@@ -1,0 +1,27 @@
+<!-- repo-list.component.html -->
+<div class="repo-list-container">
+<div *ngIf="loading"><h3>Loading...</h3></div>
+<div *ngIf="error"><h3>User not found</h3></div>
+<div *ngIf="!loading && !error">
+  <div class="cards">
+    <div class="card" *ngFor="let repo of repositories">
+   
+      <h2>{{ repo.name }}</h2>
+      <p>{{ repo.description }}</p>
+     
+      <div *ngIf="repo.languages.length > 0" class="language-cont">
+        <ul>
+          <li *ngFor="let language of repo.languages">{{ language }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination-cont">
+  <pagination-controls class="pagination" (pageChange)="onPageChange($event)" ></pagination-controls>
+  <select (change)="onPerPageChange($event)">
+    <option *ngFor="let size of [10, 20, 50, 100]" [value]="size">{{ size }}</option>
+  </select>
+</div>
+</div>
+</div>

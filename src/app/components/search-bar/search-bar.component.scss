@@ -1,0 +1,45 @@
+.search-container {
+    // border: 2px solid red ;
+    max-width: 500px;
+    min-width: 320px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 0 10px rgb(89, 166, 192);
+    border-radius: 0.4rem;
+    height: 140px;
+    margin: 2rem auto;
+    text-align: center;
+
+    input {
+        padding: 0.4rem 0.8rem;
+        border: 2px solid #badae5;
+        border-radius: 0.4rem;
+        font-size: 1.1rem;
+        outline: none;
+    }
+
+    button {
+        font-size: 1.1rem;
+        border: 2px solid #c4dfe8;
+        margin-left: 1rem;
+        padding: 0.4rem 1rem;
+        border-radius: 0.5rem;
+    }
+    
+}
+
+// START MEDIA 
+@media(max-width: 575px){
+    .search-container {
+        margin: 2rem 1rem;
+    }
+}
+
+@media(max-width: 416px){
+    .search-container {
+        height: 160px;
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+}

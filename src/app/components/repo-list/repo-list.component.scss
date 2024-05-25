@@ -1,0 +1,91 @@
+* {
+    font-family: math;
+}
+
+.repo-list-container {
+
+    width: 90%;
+    margin: 2rem auto;
+
+    // cards css 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        column-gap: 3rem;
+        margin-bottom: 2rem;
+
+        .card {
+            border: 2px solid grey;
+            padding: 1rem;
+
+            h2 {
+                font-size: 1.4rem;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: #008cff;
+            }
+            p{
+                word-wrap: break-word;
+            }
+
+            .language-cont {
+                margin: 1rem auto;
+
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    li {
+                        background: #4da0e2;
+                        color: #fff;
+                        padding: 0.25rem 0.5rem 0.4rem;
+                        border-radius: 0.4rem;
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    // pagination style
+    .pagination-cont {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+
+        .pagination {
+            font-size: 1.4rem;
+            text-align: center;
+
+            .ngx-pagination {
+                margin-bottom: none !important;
+                border: 2px solid green;
+            }
+    
+          
+        }
+
+        select{
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+
+}
+// Star media 
+
+
+@media(max-width:992px) {
+    .repo-list-container {
+
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+    }
+}
